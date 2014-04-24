@@ -18,4 +18,5 @@ This program prints the node IDs of the nodes being added, at each step, to the 
 ALGORITHM
 ---------
 Phase 1: For each node, we use controlled iterative DFS to find the number of nodes it will influence. We do this by proceeding until the summation of the time taken to reach that node does not exceed one time stamp. This assumption of one timestamp is temporary. We intend to extend it to multiple timestamps.
+
 Phase 2: Initially all the nodes are white, when one node is influenced, we change its colour to grey and, when we make one node the seed, we make it black. We begin with the node that has the maximum influence, colour it black, and colour all the nodes that it can influence grey. Next we choose a non-black node which can influence the maximum white nodes and continue in the similar fashion. Finally the set of black nodes is our dominating set.
