@@ -1,6 +1,10 @@
 Implementation of algorithm to find the top k influentials for weighted graphs, incorporating the concept of time stamps:
 In this algorithm , we have considered edges with weights, where weight is the frequency of communication between the two nodes. For each node we find the number of nodes it can influence in one time stamp. For example if A and B have an edge weighted x, the time needed by A to influence B is 1/x.
 
+REQUIREMENTS
+------------
+Python, along with the Python libarary Networkx.
+
 
 ASSUMPTIONS
 -----------
